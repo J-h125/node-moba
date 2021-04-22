@@ -5,6 +5,8 @@ import CategoryEdit from "@/views/CategoryEdit";
 import CategoryList from "@/views/CategoryList";
 import ItemEdit from "@/views/ItemEdit";
 import ItemList from "@/views/ItemList";
+import HeroEdit from "@/views/HeroEdit";
+import HeroList from "@/views/HeroList";
 
 Vue.use(VueRouter)
 
@@ -27,6 +29,10 @@ const routes = [
       {path:'/items/create',component:ItemEdit},
       {path:'/items/edit/:id',component:ItemEdit,props:true},
       {path:'/items/list',component:ItemList},
+
+      {path:'/heroes/create',component:HeroEdit},
+      {path:'/heroes/edit/:id',component:HeroEdit,props:true},
+      {path:'/heroes/list',component:HeroList},
     ]
   },
   // {

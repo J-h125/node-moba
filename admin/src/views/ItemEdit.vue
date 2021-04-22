@@ -7,7 +7,14 @@
         <el-input v-model="model.name"></el-input>
       </el-form-item>
       <el-form-item label="图标">
-        <el-input v-model="model.icon"></el-input>
+        <el-upload
+            class="avatar-uploader"
+            :action="$http.defaults.baseURL+'/upload'"
+            :show-file-list="false"
+            :on-success="afterUpload">
+          <img v-if="model.icon" :src="model.icon" class="avatar">
+          <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+        </el-upload>
       </el-form-item>
 
       <el-form-item>
@@ -19,7 +26,7 @@
 
 <script >
 export default {
-name: "CategoryEdit",
+name: "ItemEdit",
   props:{
     id:{}
   },
@@ -31,6 +38,10 @@ name: "CategoryEdit",
    }
   },
   methods:{
+  afterUpload(res){
+    this.$set(this.model,'icon',res.url)
+    //this.model.icon = res.url    //icon新增 没有响应式
+  },
   async save(){
 
     // eslint-disable-next-line no-unused-vars
@@ -57,6 +68,30 @@ name: "CategoryEdit",
 }
 </script>
 
-<style lang="scss" scoped>
-
+<style >
+.avatar-uploader .el-upload {
+  border: 1px dashed #d9d9d9;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+  border-color: #409EFF;
+}
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 178px;
+  height: 178px;
+  text-align: center;
+}
+.el-icon-plus:before{
+  line-height: 178px;
+}
+.avatar {
+  width: 178px;
+  height: 178px;
+  display: block;
+}
 </style>
