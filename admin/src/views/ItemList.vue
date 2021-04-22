@@ -1,6 +1,6 @@
 <template>
 <div>
-  <h1>分类列表</h1>
+  <h1>物品列表</h1>
         <el-table :data="tableData">
           <el-table-column prop="_id" label="ID" width="220" ></el-table-column>
           <el-table-column prop="name" label="物品名称" ></el-table-column>
@@ -21,7 +21,7 @@
 
 <script >
 export default {
-name: "Item List",
+name: "ItemList",
   data(){
   return {
     tableData:[]

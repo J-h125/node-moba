@@ -30,9 +30,9 @@ module.exports = app =>{
         const model = await req.Model.find().setOptions(queryOptions).limit(10)
         res.send(model)                       //获取列表接口
     })
-    router.get('/categories/:id',async (req,res)=>{
+    router.get('/:id',async (req,res)=>{
         const model = await req.Model.findById(req.params.id)
-        res.send(model)                       //获取要编辑的名称
+        res.send(model)                       //获取要编辑的内容
     })
 
     app.use('/admin/api/rest/:resource',async (req,res,next)=>{
