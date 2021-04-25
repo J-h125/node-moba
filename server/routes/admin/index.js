@@ -35,7 +35,7 @@ module.exports = app =>{
         res.send(model)                       //获取要编辑的内容
     })
 
-    app.use('/admin/api/rest/:resource',async (req,res,next)=>{
+    app.use('/admin/api/rest/:resource',async (req,res,next)=>{                      //复用
         const modelName = require('inflection').classify(req.params.resource)
         req.Model = require(`../../model/${modelName}`)
        next()
