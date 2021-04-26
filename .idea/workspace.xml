@@ -20,18 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a27e393-040d-4888-aa8c-263114a3e7cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/src/views/ArticleEdit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/views/ArticleList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/model/Article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/assets/upload.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/views/AdEdit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/views/AdList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/model/Ad.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/admin/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/views/HeroEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/views/HeroEdit.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/views/ItemEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/views/ItemEdit.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/views/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/views/Main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/admin/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/admin/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue Single File Component" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -57,6 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/server/model" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -88,7 +87,8 @@
       <workItem from="1618988851804" duration="8767000" />
       <workItem from="1619053064631" duration="21428000" />
       <workItem from="1619083476708" duration="1360000" />
-      <workItem from="1619310390713" duration="21260000" />
+      <workItem from="1619310390713" duration="21916000" />
+      <workItem from="1619398130145" duration="8312000" />
     </task>
     <servers />
   </component>
