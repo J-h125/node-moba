@@ -13,6 +13,8 @@ import AdEdit from "@/views/AdEdit";
 import AdList from "@/views/AdList";
 import AdminUserEdit from "@/views/AdminUserEdit";
 import AdminUserList from "@/views/AdminUserList";
+import Login from "@/views/Login";
+
 
 
 
@@ -25,6 +27,9 @@ VueRouter.prototype.push = function push(location) {
 
 
 const routes = [
+  {
+    path: '/login',name:'Login',component: Login
+  },
   {
     path: '/',
     name: 'Main',
