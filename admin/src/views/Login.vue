@@ -22,12 +22,17 @@ export default {
   name: 'Login',
   data(){
     return{
-      model:{}
+      model:{
+
+      }
     }
   },
   methods:{
-    login(){
-      console.log(this.model)
+    async login(){
+
+      const res =await this.$http.post('/login',this.model)
+      localStorage.token = res.data.token
+      this.$router.push('/')
     }
   }
 }

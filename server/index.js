@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+app.set('secret','123456')  //全局设定一个值  用于token
+
 app.use(require('cors')())     //使用跨域模块
 app.use(express.json())        //中间件
 app.use('/uploads',express.static(__dirname+'/uploads'))   //托管静态文件
